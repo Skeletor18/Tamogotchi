@@ -47,7 +47,7 @@ const tamogotchi = {
         this.name = name
     },
     setEat(){
-        if (this.meal < 5 || this.mood < 5) {
+        if (this.meal < 5) {
             this.meal++ 
             this.theWeight++
             this.mood--
@@ -55,14 +55,14 @@ const tamogotchi = {
         }
     },
     toSleep(){
-      if (this.energy < 5 || this.meal < 5) {
+      if (this.energy < 5) {
         this.energy++
         this.meal--
       }
         
     },
     toPlay(){
-      if (this.mood < 5 || this.energy < 5) {
+      if (this.mood < 5) {
         this.mood++
         this.energy--
          this.theWeight-- 
